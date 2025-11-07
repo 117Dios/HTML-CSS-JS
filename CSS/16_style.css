@@ -1,0 +1,40 @@
+a:link{
+    color:hsl(195, 61%, 69%);
+}
+
+a:hover{
+    color: hsl(0, 100%, 0%);
+    font-size: 1.1em;
+}
+
+a:active{
+    color: hsl(240, 100%, 58%);
+    font-size: 1.1em;
+}
+
+a:visited{
+    color: hsl(150, 86%, 43%);
+}
+
+li:hover{
+    background-color: hsl(60, 91%, 46%);
+}
+
+li:not(:hover){
+    background-color: rgb(179, 179, 179);
+}
+
+/* funziona anche con formule. è possibile usare variabili da abbinare a JS */
+li:nth-child(3n){
+    background-color: rgb(177, 177, 43);
+}
+
+#greeting p{
+    background-color: hsl(240, 100%, 83%);
+    padding: 10px;
+    display: none;
+}
+
+#greeting:hover p{
+    display: block;
+}
