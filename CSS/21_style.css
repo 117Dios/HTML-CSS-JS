@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: hsl(0, 0%, 80%);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar{
+    background-color: hsl(0, 0%, 19%);
+    height: 50px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+footer{
+    background-color: hsl(0, 0%, 80%);
+    text-align: center;
+    padding: 25px;
+    display: block;
+    clear:both; /* per non andare in float col resto */
+}
+
+/* Se l'utente è su cellulare o lo schermo è 600 pixel o meno, gli elementi saranno incolonnati invece di stare fianco a fianco */
+@media screen and (max-width:600px){
+    aside, section, article{
+        width: 100%;
+    }
+}

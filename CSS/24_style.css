@@ -1,0 +1,50 @@
+/* possiamo rendere flex tutti gli elementi contenuti in container */
+.container{
+    display:flex;
+    border: 10px solid black;
+    height: 90vh;
+
+    /* Direzione del testo. Default: row 
+    flex-direction: row-reverse; */
+
+    /* Per organizzare lungo le ascisse. Default: flex-start
+    justify-content: space-evenly;  */
+
+    /* per organizzare lungo le ordinate. Default: flex-start
+    align-items: baseline;  */
+
+    /* per andare a capo se c'è overflow. Default: no-wrap
+    flex-wrap: wrap;    */
+
+    /*
+    align-content: flex-start;  
+
+    column-gap: 1em;
+    row-gap: 1em; */
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: rgb(247, 104, 104);
+    align-self: end;
+    
+    /* l'ordine è "opposto", 1 è l'ultimo, -1 è il primo, perché l'origine è a destra e -1 fa il wrapping */
+    order: 1;
+}
+#box2{
+    background-color: rgb(216, 240, 108);
+    align-self: center
+}
+#box3{
+    background-color: rgb(98, 228, 87);
+}
+#box4{
+    background-color: rgb(89, 73, 235);
+}

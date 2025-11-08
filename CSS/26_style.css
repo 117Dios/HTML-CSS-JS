@@ -1,0 +1,74 @@
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 100%, 69%);
+    font-size: 13em;
+    text-align: center;
+
+}
+
+img{
+animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1); /* default: ease-in-out */
+}
+
+/*
+Per creare animazione bisogna fare una keyframe rule
+Si può iniziare con
+    from = parte dalal posizione iniziale e fa la trasformazione
+    to = la trasformazione finisce nella posizione indicata
+    [x]% = indica in quanto tempo accade l'animazione per poi tornare al proprio posto, con formula 100/x.
+        Praticamente la lunghezza è [x]% di quella settata in animation-duration
+*/
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideRight{
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slideUp{
+    to{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes grow{
+    50%{
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes shrink{
+    50%{
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@keyframes fade{
+    50%{
+        opacity: 0;
+    }
+}
