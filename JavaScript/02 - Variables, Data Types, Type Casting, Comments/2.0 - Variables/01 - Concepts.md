@@ -20,7 +20,7 @@ Without use strict:
 
 ```javascript
 height  =  180;
-console.log(height);  //  ->  180</pre>
+console.log(height);  //  ->  180<
 ```
 
 With use strict:
