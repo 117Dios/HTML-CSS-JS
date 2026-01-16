@@ -39,7 +39,7 @@ console.log("Total: ", total);
 ```
 </details>
 
-<hr><hr>
+<hr>
 
 # Question 2
 
