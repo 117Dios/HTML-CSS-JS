@@ -164,7 +164,7 @@ console.log(0.3 / 0.1); // 2.9999999999999996
 
 The numbers will be precise for integers up to 252. Most fractions will not be precise. We will discuss how to mitigate this problem with comparison operators.
 
-# Compund Assignment operators
+# Compound Assignment operators
 
 Binary arithmetic operators can be combined with the assignment operator, resulting in:
 
